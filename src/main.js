@@ -1,1 +1,2 @@
-var a = require('aaa');
+import a from 'aaa';
+

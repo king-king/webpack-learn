@@ -70,13 +70,19 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-alert('ok');
+alert('right');
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var a = __webpack_require__(0);
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_aaa__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_aaa___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_aaa__);
+
+
+
 
 /***/ })
 /******/ ]);
