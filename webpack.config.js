@@ -16,5 +16,17 @@ module.exports = {
             //可以向模板传递参数，然后应用于自动生成的html,(模板需要获取参数)
             title: '我来自参数'
         })
-    ]
+    ],
+    module: {
+        rules: [{
+            test: /\.scss$/,
+            use: [{
+                loader: "style-loader" // 将 JS 字符串生成为 style 节点
+            }, {
+                loader: "css-loader" // 将 CSS 转化成 CommonJS 模块
+            }, {
+                loader: "sass-loader" // 将 Sass 编译成 CSS
+            }]
+        }]
+    }
 }
