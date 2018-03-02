@@ -1,3 +1,6 @@
+var htmlWebpackPlugin = require('html-webpack-plugin');
+var Ex = require('extract-text-webpack-plugin');
+
 module.exports = {
     entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
     output: {
@@ -6,10 +9,11 @@ module.exports = {
     },
     //插件数组
     plugins: [
+        new Ex("[name].css"),
         //初始化插件,传递模板参数
         new htmlWebpackPlugin({
             //模板为同级目录下的index.html，为何不用写路径，是因为默认上下文问webpack.config.js所在的文件夹
-            template: '/view/index.html',
+            template: 'view/index.html',
             //自动生成HTML文件的名字
             filename: 'index.html',
             //引入打包后的js的script标签所在的位置,false表示不自动引入打包后的js
