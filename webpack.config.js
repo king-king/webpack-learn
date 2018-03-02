@@ -10,7 +10,7 @@ module.exports = {
     //插件数组
     plugins: [
         new ExtractTextPlugin({
-            filename: "[name]_[contenthash:8].css"
+            filename: "static/[name]_[contenthash:8].css"
         }),
         //初始化插件,传递模板参数
         new htmlWebpackPlugin({
