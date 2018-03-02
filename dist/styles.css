@@ -1,0 +1,16 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    color: green;
+    font-weight: bolder;
+}
+
+#root div {
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+}
