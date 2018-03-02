@@ -9,6 +9,7 @@ module.exports = {
     },
     //插件数组
     plugins: [
+        new ExtractTextPlugin("styles.css"),
         //初始化插件,传递模板参数
         new htmlWebpackPlugin({
             //模板为同级目录下的index.html，为何不用写路径，是因为默认上下文问webpack.config.js所在的文件夹
@@ -18,17 +19,16 @@ module.exports = {
             //引入打包后的js的script标签所在的位置,false表示不自动引入打包后的js
             //可以向模板传递参数，然后应用于自动生成的html,(模板需要获取参数)
             title: '我来自参数'
-        }),
-        new ExtractTextPlugin("styles.css"),
+        })
+
     ],
     module: {
         rules: [{
-            test: /\.scss$/,
+            test: /\.s?css$/,
             use: ExtractTextPlugin.extract({
                 fallback: "style-loader",
                 use: ["css-loader", 'sass-loader']
             })
-            // use: ['style-loader', 'css-loader', 'sass-loader']
         }]
     }
 }
