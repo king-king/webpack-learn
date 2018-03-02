@@ -18,12 +18,17 @@ module.exports = {
             //引入打包后的js的script标签所在的位置,false表示不自动引入打包后的js
             //可以向模板传递参数，然后应用于自动生成的html,(模板需要获取参数)
             title: '我来自参数'
-        })
+        }),
+        new ExtractTextPlugin("styles.css"),
     ],
     module: {
         rules: [{
-            test: /\.scss$/,
-            use: ['style-loader', 'css-loader', 'sass-loader']
+            test: /\.css$/,
+            use: ExtractTextPlugin.extract({
+                fallback: "style-loader",
+                use: ["css-loader", 'sass-loader']
+            })
+            // use: ['style-loader', 'css-loader', 'sass-loader']
         }]
     }
 }
