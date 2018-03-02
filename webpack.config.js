@@ -1,5 +1,5 @@
 var htmlWebpackPlugin = require('html-webpack-plugin');
-var Ex = require('extract-text-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
@@ -9,7 +9,6 @@ module.exports = {
     },
     //插件数组
     plugins: [
-        new Ex("[name].css"),
         //初始化插件,传递模板参数
         new htmlWebpackPlugin({
             //模板为同级目录下的index.html，为何不用写路径，是因为默认上下文问webpack.config.js所在的文件夹
@@ -24,13 +23,7 @@ module.exports = {
     module: {
         rules: [{
             test: /\.scss$/,
-            use: [{
-                loader: "style-loader" // 将 JS 字符串生成为 style 节点
-            }, {
-                loader: "css-loader" // 将 CSS 转化成 CommonJS 模块
-            }, {
-                loader: "sass-loader" // 将 Sass 编译成 CSS
-            }]
+            use: ['style-loader', 'css-loader', 'sass-loader']
         }]
     }
 }
