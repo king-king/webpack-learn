@@ -9,7 +9,9 @@ module.exports = {
     },
     //插件数组
     plugins: [
-        new ExtractTextPlugin("styles.css"),
+        new ExtractTextPlugin({
+            filename: "[name].css"
+        }),
         //初始化插件,传递模板参数
         new htmlWebpackPlugin({
             //模板为同级目录下的index.html，为何不用写路径，是因为默认上下文问webpack.config.js所在的文件夹

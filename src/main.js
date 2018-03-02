@@ -1,3 +1,3 @@
 import './style/style.scss';
 
-import 'js/com.js';
+import com from './js/com.js';
