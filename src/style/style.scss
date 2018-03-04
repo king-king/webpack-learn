@@ -1,0 +1,17 @@
+$fontcolor:green;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 40px;
+}
+
+#root {
+    color: $fontcolor;
+    font-weight: bolder;
+    div {
+        border: 5px solid black;
+        width: 100px;
+        height: 100px;
+    }
+}
