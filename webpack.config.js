@@ -10,9 +10,9 @@ module.exports = {
         login: __dirname + "/src/login/main.js"
     },
     output: {
-        path: __dirname + "/dist/js", //打包后的文件存放的地方
-        // js输出路径
-        filename: "[name]_[hash:8].js" //打包后输出文件的文件名
+        path: __dirname + "/dist", //打包后的文件存放的地方
+        // js输出路径,可以使用文件夹结构
+        filename: "static/js/[name]_[hash:8].js" //打包后输出文件的文件名
     },
     //插件数组
     plugins: [
@@ -22,7 +22,7 @@ module.exports = {
             dry: false
         }),
         new ExtractTextPlugin({
-            filename: "static/[name]_[contenthash:8].css"
+            filename: "static/style/[name]_[contenthash:8].css"
         }),
         //初始化插件,传递模板参数
         new htmlWebpackPlugin({
