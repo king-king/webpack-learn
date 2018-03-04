@@ -79,7 +79,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ 5:
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleParseError: Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)\n    at doBuild.e (D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\webpack\\lib\\NormalModule.js:303:19)\n    at runLoaders (D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\webpack\\lib\\NormalModule.js:209:11)\n    at D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\loader-runner\\lib\\LoaderRunner.js:370:3\n    at iterateNormalLoaders (D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\loader-runner\\lib\\LoaderRunner.js:211:10)\n    at D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\loader-runner\\lib\\LoaderRunner.js:202:4\n    at D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:70:14\n    at _combinedTickCallback (internal/process/next_tick.js:67:7)\n    at process._tickCallback (internal/process/next_tick.js:98:9)");
 
 /***/ })
 

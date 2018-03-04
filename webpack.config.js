@@ -41,12 +41,23 @@ module.exports = {
         })
     ],
     module: {
-        rules: [{
-            test: /\.s?css$/,
-            use: ExtractTextPlugin.extract({
-                fallback: "style-loader",
-                use: ["css-loader", 'sass-loader']
-            })
-        }]
+        rules: [
+            // loader
+            {
+                test: /\.s?css$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: ["css-loader", 'sass-loader']
+                })
+            }, {
+                test: /\.(png|jpg|gif)$/,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        name: '[name]_[hash:8].[ext]'
+                    }
+                }]
+            }
+        ]
     }
 }
