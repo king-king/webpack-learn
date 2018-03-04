@@ -6,8 +6,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     // 入口文件
     entry: {
-        index: __dirname + "/src/main.js",
-        login: __dirname + "/src/login/main.js"
+        index: __dirname + "/src/js/index/main.js",
+        login: __dirname + "/src/js/login/main.js"
     },
     output: {
         path: __dirname + "/dist", //打包后的文件存放的地方
