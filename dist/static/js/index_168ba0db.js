@@ -57,30 +57,50 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 4:
+/******/ ([
+/* 0 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_login_scss__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_login_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_login_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_style_scss__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_style_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__component_com_js__ = __webpack_require__(2);
+
+
 
 
 /***/ }),
-
-/***/ 5:
+/* 1 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleParseError: Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)\n    at doBuild.e (D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\webpack\\lib\\NormalModule.js:303:19)\n    at runLoaders (D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\webpack\\lib\\NormalModule.js:209:11)\n    at D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\loader-runner\\lib\\LoaderRunner.js:370:3\n    at iterateNormalLoaders (D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\loader-runner\\lib\\LoaderRunner.js:211:10)\n    at D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\loader-runner\\lib\\LoaderRunner.js:202:4\n    at D:\\Program Files\\apache-tomcat-8.0.1\\webapps\\MyWeb\\webpack-learn\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:70:14\n    at _combinedTickCallback (internal/process/next_tick.js:67:7)\n    at process._tickCallback (internal/process/next_tick.js:98:9)");
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_com_css__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_com_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_com_css__);
+
+
+var div = document.createElement('div');
+div.classList.add('com');
+div.innerHTML = 'com';
+document.querySelector('#root').appendChild(div);
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
-
-/******/ });
+/******/ ]);

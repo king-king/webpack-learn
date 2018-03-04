@@ -10,6 +10,8 @@ module.exports = {
         login: __dirname + "/src/js/login/main.js"
     },
     output: {
+        // 用于设定css中引用img的路径
+        publicPath: "/dist/",
         path: __dirname + "/dist", //打包后的文件存放的地方
         // js输出路径,可以使用文件夹结构
         filename: "static/js/[name]_[chunkhash:8].js" //打包后输出文件的文件名
@@ -50,11 +52,13 @@ module.exports = {
                     use: ["css-loader", 'sass-loader']
                 })
             }, {
+                // 打包css中的img
                 test: /\.(png|jpg|gif)$/,
                 use: [{
                     loader: 'url-loader',
                     options: {
-                        name: '[name]_[hash:8].[ext]'
+                        name: 'static/img/[name]_[hash].[ext]',
+                        limit: 10
                     }
                 }]
             }
