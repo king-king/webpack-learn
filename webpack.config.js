@@ -22,7 +22,6 @@ module.exports = {
             //可以向模板传递参数，然后应用于自动生成的html,(模板需要获取参数)
             title: '我来自参数'
         })
-
     ],
     module: {
         rules: [{
