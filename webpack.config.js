@@ -6,6 +6,7 @@ const webpack = require('webpack');
 module.exports = {
     // 入口文件
     entry: {
+        // verdor: [''],
         index: __dirname + "/src/js/index/main.js",
         login: __dirname + "/src/js/login/main.js"
     },
@@ -20,9 +21,6 @@ module.exports = {
     },
     //插件数组
     plugins: [
-        new webpack.ProvidePlugin({
-            Promise: 'promise-polyfill'
-        }),
         new CleanWebpackPlugin('dist/*', {
             root: __dirname,
             verbose: true,
