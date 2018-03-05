@@ -53,12 +53,12 @@ module.exports = {
                 })
             }, {
                 // 打包css中的img
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|jpeg|gif)$/,
                 use: [{
                     loader: 'url-loader',
                     options: {
                         name: 'static/img/[name]_[hash].[ext]',
-                        limit: 10
+                        limit: 100
                     }
                 }]
             }
