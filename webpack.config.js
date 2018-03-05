@@ -11,7 +11,7 @@ module.exports = {
     },
     output: {
         // 设定import()动态js脚本名称
-        chunkFilename: '[name].bundle.js',
+        chunkFilename: 'static/js/[name]_[chunkhash:8].async.js',
         // 用于设定css中引用img的路径
         publicPath: "/dist/",
         path: __dirname + "/dist", //打包后的文件存放的地方
@@ -63,6 +63,17 @@ module.exports = {
                         limit: 10
                     }
                 }]
+            },
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['env'],
+                        plugins: ['syntax-dynamic-import']
+                    }
+                }
             }
         ]
     }

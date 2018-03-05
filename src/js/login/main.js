@@ -1,7 +1,7 @@
 import '../../style/login.scss';
 
 document.querySelector('.login').onclick = function () {
-    // import ('../async/getInfo.js').catch(error => 'An error occurred while loading the component').then(function (component) {
-
-    // });
+    import (/* webpackChunkName: "getInfo" */'../async/getInfo').then(function (getInfo) {
+        getInfo.alert();
+    });
 };
