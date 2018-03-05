@@ -74,6 +74,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_login_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_login_scss__);
 
 
+document.querySelector('.login').onclick = function () {
+    // import ('../async/getInfo.js').catch(error => 'An error occurred while loading the component').then(function (component) {
+
+    // });
+};
+
 /***/ }),
 
 /***/ 5:

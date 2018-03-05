@@ -10,6 +10,8 @@ module.exports = {
         login: __dirname + "/src/js/login/main.js"
     },
     output: {
+        // 设定import()动态js脚本名称
+        // chunkFilename: '[name].bundle.js',
         // 用于设定css中引用img的路径
         publicPath: "/dist/",
         path: __dirname + "/dist", //打包后的文件存放的地方
@@ -57,7 +59,7 @@ module.exports = {
                 use: [{
                     loader: 'url-loader',
                     options: {
-                        name: 'static/img/[name]_[hash].[ext]',
+                        name: 'static/img/[name]_[hash:8].[ext]',
                         limit: 10
                     }
                 }]
