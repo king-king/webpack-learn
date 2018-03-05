@@ -11,7 +11,7 @@ module.exports = {
     },
     output: {
         // 设定import()动态js脚本名称
-        // chunkFilename: '[name].bundle.js',
+        chunkFilename: '[name].bundle.js',
         // 用于设定css中引用img的路径
         publicPath: "/dist/",
         path: __dirname + "/dist", //打包后的文件存放的地方
