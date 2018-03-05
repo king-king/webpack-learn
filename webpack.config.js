@@ -2,13 +2,15 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
 
 module.exports = {
     // 入口文件
     entry: {
         // verdor: [''],
-        index: __dirname + "/src/js/index/main.js",
-        login: __dirname + "/src/js/login/main.js"
+        index: __dirname + "/static/js/index/main.js",
+        login: __dirname + "/static/js/login/main.js"
     },
     output: {
         // 设定import()动态js脚本名称
@@ -43,7 +45,11 @@ module.exports = {
             //自动生成HTML文件的名字,可以嵌套文件夹
             filename: 'view/login.html',
             chunks: ['login']
-        })
+        }),
+        new CopyWebpackPlugin([{
+            from: __dirname + '/static/js/lib/promise_polyfill.7.1.0.js',
+            to: __dirname + '/dist/static/js/lib/'
+        }])
     ],
     module: {
         rules: [
