@@ -1,7 +1,7 @@
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-
+const webpack = require('webpack');
 
 module.exports = {
     // 入口文件
@@ -20,6 +20,9 @@ module.exports = {
     },
     //插件数组
     plugins: [
+        new webpack.ProvidePlugin({
+            Promise: 'promise-polyfill'
+        }),
         new CleanWebpackPlugin('dist/*', {
             root: __dirname,
             verbose: true,
