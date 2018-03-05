@@ -29,7 +29,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		2: 0
+/******/ 		3: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "static/js/" + ({"0":"getInfo"}[chunkId]||chunkId) + "_" + {"0":"059e9523"}[chunkId] + ".async.js";
+/******/ 		script.src = __webpack_require__.p + "static/js/" + ({"0":"getInfo"}[chunkId]||chunkId) + "_" + {"0":"24aa082c"}[chunkId] + ".async.js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -164,7 +164,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 document.querySelector('.login').onclick = function () {
-    __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 6)).then(function (getInfo) {
+    __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 7)).then(function (getInfo) {
         getInfo.alert();
         getInfo.num();
     });
