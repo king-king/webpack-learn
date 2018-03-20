@@ -29,7 +29,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		4: 0
+/******/ 		5: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "static/js/" + ({"0":"getInfo"}[chunkId]||chunkId) + "_" + {"0":"0b357dd3"}[chunkId] + ".async.js";
+/******/ 		script.src = __webpack_require__.p + "static/js/" + ({}[chunkId]||chunkId) + "_" + {"1":"92587a6b"}[chunkId] + ".async.js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -142,79 +142,23 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 4:
+/***/ 7:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-__webpack_require__(5);
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-document.querySelector('.login').onclick = function () {
-    __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 10)).then(function (getInfo) {
-        getInfo.alert();
-        getInfo.num();
-    });
+document.querySelector('#home').onclick = function () {
+    __webpack_require__.e/* require.ensure */(1).then((function () {
+        var home = __webpack_require__(12); //baidumap.js放在我们当前目录下
+        home.get();
+    }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
-
-var People = function () {
-    function People(name) {
-        _classCallCheck(this, People);
-
-        this.name = name;
-    }
-
-    _createClass(People, [{
-        key: 'name',
-        value: function name() {
-            return this.name;
-        }
-    }]);
-
-    return People;
-}();
-
-var Student = function (_People) {
-    _inherits(Student, _People);
-
-    function Student() {
-        _classCallCheck(this, Student);
-
-        return _possibleConstructorReturn(this, (Student.__proto__ || Object.getPrototypeOf(Student)).apply(this, arguments));
-    }
-
-    _createClass(Student, [{
-        key: 'num',
-        value: function num() {
-            return 100;
-        }
-    }]);
-
-    return Student;
-}(People);
-
-var stu = new Student();
-console.log(stu.num());
-
-/***/ }),
-
-/***/ 5:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 

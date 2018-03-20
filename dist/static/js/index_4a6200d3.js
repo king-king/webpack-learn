@@ -76,6 +76,8 @@ var _com = __webpack_require__(2);
 
 var _com2 = _interopRequireDefault(_com);
 
+__webpack_require__(4);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
@@ -103,6 +105,15 @@ document.querySelector('#root').appendChild(div);
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+console.log('okok');
 
 /***/ })
 /******/ ]);

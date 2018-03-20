@@ -60,46 +60,12 @@
 /******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 7:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _angular = __webpack_require__(8);
-
-var _angular2 = _interopRequireDefault(_angular);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var main = _angular2.default.module('main', []);
-main.controller('ctrl', function ($scope) {
-    $scope.slogan = '你好';
-});
-
-// var app = angular.module('main', [])
-//     .controller('ctrl', function ($scope) {
-//         $scope.slogan = 'Welcome!';
-//     });
-// angular.bootstrap(document, ['main']);
-
-/***/ }),
-
-/***/ 8:
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(9);
-module.exports = angular;
-
-
-/***/ }),
-
-/***/ 9:
+/***/ 10:
 /***/ (function(module, exports) {
 
 /**
@@ -33933,6 +33899,40 @@ $provide.value("$locale", {
 })(window);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
+
+/***/ }),
+
+/***/ 8:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _angular = __webpack_require__(9);
+
+var _angular2 = _interopRequireDefault(_angular);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var main = _angular2.default.module('main', []);
+main.controller('ctrl', function ($scope) {
+    $scope.slogan = '你好';
+});
+
+// var app = angular.module('main', [])
+//     .controller('ctrl', function ($scope) {
+//         $scope.slogan = 'Welcome!';
+//     });
+// angular.bootstrap(document, ['main']);
+
+/***/ }),
+
+/***/ 9:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(10);
+module.exports = angular;
+
 
 /***/ })
 
