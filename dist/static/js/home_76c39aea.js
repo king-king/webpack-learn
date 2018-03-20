@@ -29,7 +29,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		4: 0
+/******/ 		5: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "static/js/" + ({}[chunkId]||chunkId) + "_" + {"1":"cfedee9b"}[chunkId] + ".async.js";
+/******/ 		script.src = __webpack_require__.p + "static/js/" + ({}[chunkId]||chunkId) + "_" + {"1":"f6693dc6"}[chunkId] + ".async.js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -155,7 +155,7 @@
 
 document.querySelector('#home').onclick = function () {
     __webpack_require__.e/* require.ensure */(1).then((function () {
-        var home = __webpack_require__(8); //baidumap.js放在我们当前目录下
+        var home = __webpack_require__(11); //baidumap.js放在我们当前目录下
         home.get();
     }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };

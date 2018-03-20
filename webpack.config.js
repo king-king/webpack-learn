@@ -11,7 +11,8 @@ module.exports = {
         // verdor: [''],
         index: __dirname + "/static/js/index/main.js",
         login: __dirname + "/static/js/login/main.js",
-        home: __dirname + "/static/js/home/main.js"
+        home: __dirname + "/static/js/home/main.js",
+        angular: __dirname + "/static/js/angular/main.js"
     },
     output: {
         // 设定import()动态js脚本名称
@@ -53,6 +54,13 @@ module.exports = {
             //自动生成HTML文件的名字,可以嵌套文件夹
             filename: 'view/home.html',
             chunks: ['home']
+        }),
+        new htmlWebpackPlugin({
+            //模板为同级目录下的index.html，为何不用写路径，是因为默认上下文问webpack.config.js所在的文件夹
+            template: 'view/angular.html',
+            //自动生成HTML文件的名字,可以嵌套文件夹
+            filename: 'view/angular.html',
+            chunks: ['angular']
         }),
         new CopyWebpackPlugin([{
             from: __dirname + '/static/js/lib/promise_polyfill.7.1.0.js',
