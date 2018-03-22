@@ -73,6 +73,12 @@ module.exports = {
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: "manifest"
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            },
+            sourceMap: false
         })
     ],
     module: {
@@ -102,7 +108,10 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: ['env', 'stage-2'],
-                        plugins: ['syntax-dynamic-import', 'transform-runtime']
+                        plugins: ['syntax-dynamic-import', ['transform-runtime', {
+                            helpers: false,
+                            polyfill: false
+                        }]]
                     }
                 }
             }
