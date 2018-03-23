@@ -1,1 +1,0 @@
-webpackJsonp([4],[function(o,n,c){c(1),o.exports=c(2)},function(o,n,c){"use strict";console.log("lib1")},function(o,n,c){"use strict";console.log("lib2")}],[0]);

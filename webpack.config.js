@@ -74,12 +74,12 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             name: "manifest"
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            },
-            sourceMap: false
-        })
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         warnings: false
+        //     },
+        //     sourceMap: false
+        // })
     ],
     module: {
         rules: [
@@ -109,7 +109,7 @@ module.exports = {
                     options: {
                         presets: ['env', 'stage-2'],
                         plugins: ['syntax-dynamic-import', ['transform-runtime', {
-                            helpers: false,
+                            helpers: true,
                             polyfill: false
                         }]]
                     }

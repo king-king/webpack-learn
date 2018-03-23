@@ -1,1 +1,0 @@
-webpackJsonp([6],{10:function(n,c,e){"use strict";document.querySelector("#home").onclick=function(){e.e(1).then(function(){e(17).get()}.bind(null,e)).catch(e.oe)}}},[10]);
