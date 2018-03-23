@@ -791,7 +791,8 @@ var b = [1, 2, 3, 4];
 b.map(function (x) {
     console.log(x);
 });
+consolle.log('ok');
 
 /***/ })
 ],[78]);
-//# sourceMappingURL=index_268f1e63.js.map
+//# sourceMappingURL=index_67604036.js.map

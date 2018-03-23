@@ -10,4 +10,5 @@ var bbb = {
 let b = [1, 2, 3, 4]
 b.map((x) => {
     console.log(x)
-})
+});
+consolle.log('ok')
